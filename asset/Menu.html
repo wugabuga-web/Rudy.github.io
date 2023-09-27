@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picolla Stella</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="STS.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <a href="#" class="logo"><img src="Gambar/199.png" alt="" /></a>
+
+      <nav class="navbar">
+        <a href="STS.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Menu.html" class="active">Menu</a>
+        <a href="contact.html">contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu"></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="main-row">
+        <img src="gambar/bread.JPG" alt="" />
+        <div class="sub-row">
+          <div class="row-text">
+            <h4>Bread</h4>
+          </div>
+          <div class="row-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-row">
+        <img src="gambar/bread.png" alt="" />
+        <div class="sub-row">
+          <div class="row-text">
+            <h4>delec bread</h4>
+          </div>
+          <div class="row-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-row">
+        <img src="gambar/pasta.jpg" alt="" />
+        <div class="sub-row">
+          <div class="row-text">
+            <h4>Pasta</h4>
+          </div>
+          <div class="row-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-row">
+        <img src="gambar/pizza.png" alt="" />
+        <div class="sub-row">
+          <div class="row-text">
+            <h4>Pizza</h4>
+          </div>
+          <div class="row-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-row">
+        <img src="gambar/skill.jpg" alt="" />
+        <div class="sub-row">
+          <div class="row-text">
+            <h4>paket A</h4>
+          </div>
+          <div class="row-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-row">
+        <img src="gambar/skill.jpg" alt="" />
+        <div class="sub-row">
+          <div class="row-text">
+            <h4>Paket B</h4>
+          </div>
+          <div class="row-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+      });
+    </script>
+
+    <script type="text/javascript">
+      let menu = document.querySelector("#menu");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      };
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
